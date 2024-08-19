@@ -15,4 +15,10 @@ const button3 = h('button', { 'data-id': 789}, 'Button 3')
 const app   = h(React.Fragment, null, [button, button2, button3])
 // Fragment es utilizado para no renderizar elementos vacios
 
+/* JSX equivalent
+<React.Fragment>
+    <button data-id="123">Button 1</button>
+    <button data-id="456">Button 2</button>
+    <button data-id="789">Button 3</button>
+    */
 root.render(app)

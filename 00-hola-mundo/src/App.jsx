@@ -1,21 +1,11 @@
+import './App.css';
+import { TwitterFollowCard } from './TwitterFollowCard';
+
 export function App() {
   return (
-    <div>
-      <article>
-        <header>
-            <img src="https://unavatar.io/google/netflix.com" alt="Netflix avatar" />
-            <div>
-                <strong>Netflix</strong>
-                <span>@Netflix.us</span>
-            </div>
-        </header>
-
-        <aside>
-            <button>
-                Seguir
-            </button>
-        </aside>
-      </article>
-    </div>
+    <section className = 'App'>
+      <TwitterFollowCard userName = 'midudev' name = 'Miguel Angel Durán García'/>
+      <TwitterFollowCard userName = 'mouredev' name = 'Brais Moure'/>
+    </section>  /* Alternative for React.Fragment */
   );
 }
